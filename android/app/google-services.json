@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "463032881139",
+    "project_id": "polahidupsehat-228b6",
+    "storage_bucket": "polahidupsehat-228b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463032881139:android:42fc5335c6d98b72738c86",
+        "android_client_info": {
+          "package_name": "id.carryu.pola_hidup_sehat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "463032881139-1n53k4e65tmf220c3b1l1gaamei3bp7m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.carryu.pola_hidup_sehat",
+            "certificate_hash": "b201293b643cc52e73f3d371d1a92231ab44e092"
+          }
+        },
+        {
+          "client_id": "463032881139-83fhvulhs52vk942j3kiu01epifkggoo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxzGOf5x2UN0M-LRDhBCqrilKl0kO5azk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463032881139-83fhvulhs52vk942j3kiu01epifkggoo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
