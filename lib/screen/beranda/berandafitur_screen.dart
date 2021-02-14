@@ -115,7 +115,7 @@ class BerandaFiturScreen extends StatelessWidget {
                           TextCustom(
                             text:
                                 'Terapkan Pola Hidup Sehat untuk mendapatkan full akses fiturnya ?',
-                            fontSize: 20,
+                            fontSize: 15,
                             alignment: TextAlign.center,
                             maxLines: 2,
                           ),
@@ -204,9 +204,13 @@ class PageViewContainer extends StatelessWidget {
                       children: <Widget>[
                         Icon(
                           Icons.arrow_back,
-                          size: 25,color: AppColor.white,
+                          size: 25,
+                          color: AppColor.white,
                         ),
-                        TextCustom(text: prevPage,color: AppColor.white,),
+                        TextCustom(
+                          text: prevPage,
+                          color: AppColor.white,
+                        ),
                       ],
                     ),
                   ),
@@ -231,10 +235,14 @@ class PageViewContainer extends StatelessWidget {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        TextCustom(text: nextPage,color: AppColor.white,),
+                        TextCustom(
+                          text: nextPage,
+                          color: AppColor.white,
+                        ),
                         Icon(
                           Icons.arrow_forward,
-                          size: 25,color: AppColor.white,
+                          size: 25,
+                          color: AppColor.white,
                         )
                       ],
                     ),
@@ -270,8 +278,8 @@ class Beranda extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextCustom(
                 text: 'Beranda',
@@ -284,6 +292,19 @@ class Beranda extends StatelessWidget {
                     'Fitur ini membantu Anda mengetahui makanan apa saja yang baik untuk dikonsumsi. '
                     'Disini juga terdapat pengetahuan mengenai pola olaharaga teratur dan juga pola istrihat',
               ),
+              SizedBox(height: 10),
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/beranda.png',
+                      ),
+                    )),
+              ),
+              SizedBox(height: 30),
             ],
           ),
         ),
@@ -299,8 +320,8 @@ class CekJantung extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextCustom(
                 text: 'Cek Jantung',
@@ -311,6 +332,18 @@ class CekJantung extends StatelessWidget {
                 fontSize: 20,
                 text:
                     'Fitur ini membantu Anda mengukur detak jantung melalui flash+camera.',
+              ),
+              SizedBox(height: 10),
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/cekjantung.png',
+                      ),
+                    )),
               ),
             ],
           ),
@@ -327,8 +360,8 @@ class HitungKalori extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextCustom(
                 text: 'Hitung Kalori',
@@ -341,6 +374,19 @@ class HitungKalori extends StatelessWidget {
                     'Fitur ini dapat membantu Anda menghitung kebutuhan kalori setiap harinya. '
                     'Data diambil berdasarkan berat badan, tinggi badan, umur dan faktor tingkat aktivitas ',
               ),
+              SizedBox(height: 10),
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/hitungkalori.png',
+                      ),
+                    )),
+              ),
+              SizedBox(height: 30),
             ],
           ),
         ),
@@ -356,8 +402,8 @@ class PemeriksaanLaboratorium extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextCustom(
                 text: 'Pemeriksaan Lab',
@@ -368,6 +414,18 @@ class PemeriksaanLaboratorium extends StatelessWidget {
                 fontSize: 20,
                 text:
                     'Fitur ini membantu Anda melihat hasil lab dan menghitungnya.',
+              ),
+              SizedBox(height: 10),
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/hasillab.png',
+                      ),
+                    )),
               ),
             ],
           ),
@@ -384,8 +442,8 @@ class Nofitikasi extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(20.0),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: [
               TextCustom(
                 text: 'Notifikasi',
@@ -397,6 +455,19 @@ class Nofitikasi extends StatelessWidget {
                 text:
                     'Fitur ini membantu kamu mengetahui kapan waktu yang tepat untuk mengonsumsi makanan, beristirahat dan berolahraga',
               ),
+              SizedBox(height: 10),
+              Container(
+                height: 300,
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.black),
+                    borderRadius: BorderRadius.circular(10),
+                    image: DecorationImage(
+                      image: AssetImage(
+                        'assets/notif.png',
+                      ),
+                    )),
+              ),
+              SizedBox(height: 30),
             ],
           ),
         ),
