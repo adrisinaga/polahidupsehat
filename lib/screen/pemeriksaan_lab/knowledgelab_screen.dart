@@ -3,11 +3,8 @@ import 'package:pola_hidup_sehat/widget/color.dart';
 import 'package:pola_hidup_sehat/widget/text.dart';
 
 class KnowledgeLab extends StatelessWidget {
-  var listKnowledge = [
-    ['Hemaglobin', '13.0-16.0 g/dL'],
-    ['Hematokrit', '40-48 %'],
-  ];
-  List<JenisPemeriksaan> _items = [
+
+  static List<JenisPemeriksaan> _items = [
     JenisPemeriksaan('Hemoglobin', '13.0 - 16.0 g/dL'),
     JenisPemeriksaan('Hematokrit', '40.0 - 48.0 %'),
     JenisPemeriksaan('Leukosit', '5.000 - 10.000 (/uL)'),
@@ -83,25 +80,6 @@ class KnowledgeLab extends StatelessWidget {
                       ),
                     )
                     .toList(),
-                // rows: <DataRow>[
-                //   DataRow(
-                //     cells: <DataCell>[
-                //       DataCell(Text("Hemoglobin")),
-                //       DataCell(Text("13.0-16.0 g/dL")),
-                //     ],
-                //   ),
-                //   DataRow(
-                //     cells: <DataCell>[
-                //       DataCell(Text("Hematokrit")),
-                //       DataCell(Text("40-48 %")),
-                //     ],
-                //   ),
-                //   DataRow(
-                //     cells: <DataCell>[
-                //       DataCell(Text("Eclair")),
-                //       DataCell(Text("262")),
-                //     ],
-                //   ),
               ),
             ),
           ),

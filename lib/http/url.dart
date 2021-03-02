@@ -1,8 +1,8 @@
 ///jika melalui real device
-const urlBase = 'http://192.168.10.103/polahidupsehat/';
+// const urlBase = 'http://192.168.10.103/polahidupsehat/';
 
 ///jika melalui emulator
-// const urlBase = 'http://10.0.2.2/polahidupsehat/';
+const urlBase = 'http://10.0.2.2/polahidupsehat/';
 
 // ///jika melalui genymotion
 // const urlBase = 'http://10.0.3.2/polahidupsehat/';

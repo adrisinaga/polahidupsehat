@@ -108,7 +108,7 @@ class _KonfirmasiScreenState extends State<KonfirmasiScreen> {
                         _registerController.apiRegister('/berandafitur');
                       },
                       child: TextCustom(
-                        text: 'Nanti saja',
+                        text: 'Lihat saja',
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),

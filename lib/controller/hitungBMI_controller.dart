@@ -90,44 +90,60 @@ class HitungBmiController extends GetxController {
     // onClose();
     Get.defaultDialog(
       title: "Kebutuhan Kalori",
-      content: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Center(child: LottieFilesBeverages()),
-          RichText(
-            text: TextSpan(
-              text:
-                  'Untuk menjaga tubuh Anda agar tetap bekerja dengan baik, jumlah kebutuhan kalori per hari Anda adalah',
-              style: GoogleFonts.exo2(
-                fontSize: 15,
-                color: AppColor.textButtonBlack,
-                fontWeight: FontWeight.normal,
-              ),
-              children: <TextSpan>[
-                TextSpan(
-                  text:
-                      ' ${(gender == 'Laki-laki') ? resultLakilaki : resultPerempuan} kkal.',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 16,
-                      fontWeight: FontWeight.bold),
+      content: Container(
+        height: Get.height/1.5, // Change as per your requirement
+        width: 400.0, // C
+        child: ListView(
+
+          children: [
+            Center(child: LottieFilesBeverages()),
+            RichText(
+              text: TextSpan(
+                text:
+                    'Untuk menjaga tubuh Anda agar tetap bekerja dengan baik, jumlah kebutuhan kalori per hari Anda adalah',
+                style: GoogleFonts.exo2(
+                  fontSize: 15,
+                  color: AppColor.textButtonBlack,
+                  fontWeight: FontWeight.normal,
                 ),
-              ],
+                children: <TextSpan>[
+                  TextSpan(
+                    text:
+                        ' ${(gender == 'Laki-laki') ? resultLakilaki : resultPerempuan} kkal.',
+                    style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ],
+              ),
             ),
-          ),
-          SizedBox(height: 10),
-          (kategori=='Normal')?TextCustom(
-            text: 'Kebutuhan kalori sudah noraml. Tetap jaga pola makan teratur dengan baik',
-          ):TextCustom(
-            text: 'Kebutuhan kalori belum dapat dibilang normal. Konsultasikan kepada dokter untuk mendapat tips pola makan sehat',
-    ),
-          SizedBox(height: 10),
-          TextCustom(
-            text:
-                "Rata-rata pria dewasa membutuhkan sekitar 2.500 kalori sehari, sementara wanita dewasa biasanya butuh sekitar 2.000 kalori. \n\nNamun, ingat bahwa sebenarnya kebutuhan kalori per hari tiap orang tetap berbeda-beda. ",
-          ),
-        ],
+            SizedBox(height: 10),
+            (kategori == 'Normal')
+                ? TextCustom(
+                    text:
+                        'Kebutuhan kalori sudah normal. Tetap jaga pola makan teratur dengan baik',
+                  )
+                : TextCustom(
+                    text:
+                        'Kebutuhan kalori belum dapat dibilang normal. Konsultasikan kepada dokter untuk mendapat tips pola makan sehat',
+                  ),
+            SizedBox(height: 10),
+            TextCustom(
+              text:
+                  "Rata-rata pria dewasa membutuhkan sekitar 2.500 kalori sehari, sementara wanita dewasa biasanya butuh sekitar 2.000 kalori. \n\nNamun, ingat bahwa sebenarnya kebutuhan kalori per hari tiap orang tetap berbeda-beda. ",
+            ),
+            SizedBox(height: 10),
+            TextCustom(
+              text:
+              "Berikut daftar tabel kalori makanan yang baik di konsumsi setiap harinya berdasarkan perhitungan kalori yang sudah dilakukan",
+            ),
+            GestureDetector(onTap: (){
+              Get.offAndToNamed('/lihattabelkalori');
+            },
+                child: TextCustom(text: 'Lihat disini',color: Colors.red,)),
+          ],
+        ),
       ),
       actions: [
         FlatButton(

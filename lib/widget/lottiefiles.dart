@@ -78,7 +78,7 @@ class LottieFilesPolaMakan extends StatelessWidget {
       width: 200,
       height: 200,
       child: LottieBuilder.network(
-        'https://assets5.lottiefiles.com/packages/lf20_ioo0bavi.json',
+        'https://assets2.lottiefiles.com/packages/lf20_7CAQeC.json',
       ),
     );
   }

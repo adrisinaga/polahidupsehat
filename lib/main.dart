@@ -6,6 +6,7 @@ import 'package:pola_hidup_sehat/screen/beranda/berandafitur_screen.dart';
 import 'package:pola_hidup_sehat/screen/beranda/deskripsi_screen.dart';
 import 'package:pola_hidup_sehat/screen/auth/isidatadiri_screen.dart';
 import 'package:pola_hidup_sehat/screen/cek_jantung/heartrate_screen.dart';
+import 'package:pola_hidup_sehat/screen/hitung_kalori/tabelkalori_screen.dart';
 import 'package:pola_hidup_sehat/screen/main_menu.dart';
 import 'package:pola_hidup_sehat/screen/auth/login_screen.dart';
 import 'package:pola_hidup_sehat/screen/auth/register_screen.dart';
@@ -70,6 +71,7 @@ class MyApp extends StatelessWidget {
         GetPage(name: '/secondnotifscreen', page: () => SecondNotificationScreen()),
         GetPage(name: '/heartrate', page: () => HeartRate()),
         GetPage(name: '/knowledgeLab', page: () => KnowledgeLab()),
+        GetPage(name: '/lihattabelkalori', page: () => TabelKaloriScreen()),
       ],
     );
   }
